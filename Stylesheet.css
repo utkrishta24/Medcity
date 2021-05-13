@@ -1,0 +1,160 @@
+body{
+    background-color: blanchedalmond;
+    
+    height: auto;
+}
+
+.footer{
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+}
+
+.footer1{
+    display: grid;
+    border:none;                
+}
+
+.Bottom2{
+    display: flex;
+    background-color: #1d2a4d;
+    color: white;
+    height: 350px;
+    padding: 20px;
+    flex-direction: row;
+    /* align-items: center;
+    align-content: center; */
+    justify-content: center;
+}
+
+.Bottom2 > div{
+    padding: 40px;
+}
+
+.Bottom{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+    flex-direction: row;
+    color: gray;
+    justify-content:space-evenly;
+}
+
+.Bottom a{
+    text-decoration: none;
+    color: rgb(7, 209, 216);
+}
+
+.Bottom> div{
+        text-align: center;
+        padding-top: 45px;
+}
+
+.Department{
+    display: flex;
+    flex-direction: column;
+}
+
+.Department > div{
+    padding: 5px;
+}
+
+.Links{
+    display: flex;
+    flex-direction: column;
+}
+
+.Links> div{
+    padding: 5px;
+}
+
+ul{
+list-style-type:none;
+margin: 0;
+padding: 0;
+width: 100%;
+position: sticky;
+overflow: hidden;
+background-color: white;
+top: 0;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: cornflowerblue;
+}
+
+#Appo{
+    background-color: rgb(49, 197, 49);
+    border-radius: 40px;
+    width: 150px;
+    height:auto;
+    border: none;
+}
+
+.Add{
+    display: flex;
+    flex-direction: row;
+    padding: 50px;                
+}
+
+.Add> div{
+    padding: 50px;
+}
+
+.Add2>div{
+    text-align: left;
+    padding-left: 200px;
+}
+
+.bg{
+    display: grid;
+    height: auto;
+    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    /* background-image:url(Hello.jpg); */
+}
+
+.hello{
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+    flex-direction: row;
+    opacity: 80%;
+    padding: 50px;  
+    color: white;
+    
+}
+.hello>div{
+    padding: 30px;
+}
+
+.tabs{
+    display:inline-flex;
+    flex-direction: row;
+    margin-left: 40px;
+    margin-right: 0; 
+}
+
+.tabs>div{  
+    width: 150px;
+    height: 250px;
+    padding: 50px;
+    margin-left: 50px;
+    margin-bottom: -60px;
+    margin-right: 0;
+    border-radius: 20px;
+    background-color: white;
+}
