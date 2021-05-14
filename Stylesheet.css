@@ -70,39 +70,89 @@ body{
     padding: 5px;
 }
 
-ul{
-list-style-type:none;
-margin: 0;
-padding: 0;
-width: 100%;
-position: sticky;
+
+
+
+.Navbar{
+left: 0;
+right: 0;
+top: 0;
+    
 overflow: hidden;
 background-color: white;
-top: 0;
 }
 
-li{
-    float: left;
-}
-
-li a{
-    display: block;
+.Navbar a{
+    float:left;   
+    font-size: 16px;
     color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-li a:hover{
-    background-color: cornflowerblue;
+.Dropdown{
+    float: left;
+    overflow: hidden;
+}
+.Dropdown .Dropbutton{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.Navbar a:hover, .Dropdown:hover .Dropbutton{
+background-color: sienna;
 }
 
-#Appo{
-    background-color: rgb(49, 197, 49);
+.Dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: khaki;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+.Dropdown-content a{
+    float: none;
+    color: rosybrown;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.Dropdown-content a:hover{
+    background-color: royalblue;
+}
+.Dropdown:hover .Dropdown-content{
+    display: block;
+}
+
+
+.Appo{
+    background-color: rgb(206, 84, 190);
     border-radius: 40px;
     width: 150px;
     height:auto;
     border: none;
+    height: 50px;
+    float: right;
+    margin: 20px;
+}
+#Appo a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+#Appo:hover{
+    border: cornflowerblue 3px solid;
+    box-shadow: 2px 2px 3px blueviolet;
 }
 
 .Add{
@@ -123,14 +173,14 @@ li a:hover{
 .bg{
     display: grid;
     height: auto;
-    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    background: linear-gradient(141deg, #0fb8ad 0%, #d46e0e 51%, #2cb5e8 75%);
     /* background-image:url(Hello.jpg); */
 }
 
 .hello{
     display: flex;
     flex-wrap: wrap;
-    height: 200px;
+    height: 300px;
     flex-direction: row;
     opacity: 80%;
     padding: 50px;  
@@ -141,11 +191,20 @@ li a:hover{
     padding: 30px;
 }
 
+.tick{
+    display: flex;
+    flex-direction: row;
+}
+ul{
+    list-style-type:none;
+}
+
 .tabs{
     display:inline-flex;
     flex-direction: row;
     margin-left: 40px;
     margin-right: 0; 
+    transition: 1s;
 }
 
 .tabs>div{  
@@ -157,4 +216,24 @@ li a:hover{
     margin-right: 0;
     border-radius: 20px;
     background-color: white;
+}
+
+.tabs>div:hover{
+transform:translateY(-40px);
+}
+
+.Header{
+    color: white;
+    background-color: black;
+    height: 50px;
+    font-size: xx-large;
+    padding: 20px;
+}
+
+.buy
+{
+    height: 40px;
+    float: right;
+    background-color: cadetblue;
+    
 }
