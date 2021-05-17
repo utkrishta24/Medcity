@@ -90,6 +90,7 @@ z-index: 1;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    
 }
 
 .Dropdown{
@@ -105,6 +106,7 @@ z-index: 1;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+    
 }
 .Navbar a:hover, .Dropdown:hover .Dropbutton{
 border-top: 3px solid rgb(0, 174, 255);
@@ -217,8 +219,9 @@ ul{
     flex-direction: row;
     margin-left: 40px;
     margin-right: 0; 
-    transition: 1s;
+    transition: 3s;
 }
+
 
 .tabs>div{  
     width: 150px;
@@ -229,9 +232,12 @@ ul{
     margin-right: 0;
     border-radius: 20px;
     background-color: white;
+
+
 }
 
 .tabs>div:hover{
+border-left: #2cb5e8 5px solid;    
 transform:translateY(-40px);
 }
 
